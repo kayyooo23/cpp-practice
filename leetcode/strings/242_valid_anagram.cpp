@@ -6,19 +6,19 @@
 #include <string>
 #include <unordered_map>
 
-bool isAnagram(std::string s, std::string t) {
+bool isAnagram(const std::string& s, const std::string& t) {
     if (s.length() != t.length()) return false;
 
-    std::unordered_map<char, int> count;
+std::unordered_map<char, int> count;
 
-    for (char c : s) {
-        count[c]++;
-    }
-    for (char c : t) {
-        count[c]--;
-    }
-    for (auto const& pair : count) {
-        if (pair.second != 0) return false;
-    }
-    return true;
+for (char c : s) {
+count[c]++;
+}
+for (char c : t) {
+count[c]--;
+}
+for (auto const& pair : count) {
+if (pair.second != 0) return false;
+}
+return true;
 }
