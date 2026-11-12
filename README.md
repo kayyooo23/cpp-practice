@@ -6,7 +6,7 @@ Learning in public — this repo holds solved problems and small self-contained 
 
 ## LeetCode
 
-9 problems solved so far (9 Easy, 0 Medium, 0 Hard), organized by topic under `leetcode/`. Written without starter templates. The code here is my actual accepted submission, not a cleaned-up version — e.g. Two Sum below is the brute-force approach I submitted, not the optimized hash-map one.
+10 problems solved so far (10 Easy, 0 Medium, 0 Hard), organized by topic under `leetcode/`. Written without starter templates. The code here preserves my own approaches — e.g. Two Sum below is the brute-force approach I submitted, not the optimized hash-map one. Move Zeroes is my written solution; an accepted LeetCode submission has not been confirmed.
 
 ### arrays_and_hashing
 
@@ -16,6 +16,7 @@ Learning in public — this repo holds solved problems and small self-contained 
 | 121 | Best Time to Buy and Sell Stock | single pass, track min price seen so far | O(n) |
 | 136 | Single Number | XOR all elements | O(n) |
 | 217 | Contains Duplicate | hand-rolled open-addressing hash table (not unordered_set) | O(n) |
+| 283 | Move Zeroes | two indices, swap non-zero elements forward in place (O(1) extra memory) | O(n) |
 | 485 | Max Consecutive Ones | single pass, track current/best run | O(n) |
 | 1480 | Running Sum of 1d Array | in-place prefix sum | O(n) |
 
